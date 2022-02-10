@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a th:href="@{/v1/customer/home}">Home</a></li>
+            <li><a th:href="@{/v1/customer/about}">About</a></li>
+            <li><a th:href="@{/v1/customer/contact}">Contact</a></li>
+        </ul>
+    </nav>
+    <a th:href="@{/v1/customer/login}" class="login-link">Login</a>
+    <a th:href="@{/v1/customer/register}" class="login-link">Register</a>
+</header>
+<main th:style="'background-image: url(/images/pexels-hasan-albari-1229861.jpg);'">
+    <p>Welcome</p>
+    <p>Customer Management System</p>
+    <hr>
+</main>
+<footer>
+    <p>&copy; EBENEZER BUABENG 2022</p>
+</footer>
+</body>
+</html>

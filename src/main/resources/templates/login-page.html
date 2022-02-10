@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link th:href="@{/css/login-page-style.css}" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body th:style="'background: url(/images/pexels-fauxels-3182773.jpg) no-repeat center center cover;'">
+    <form th:action="@{/v1/customer/login}" method="post">
+    <label for="username">UserName</label>
+    <input type="text" name="username" id="username">
+    <br><br>
+    <label for="password">PassWord</label>
+    <input type="password" name="password" id="password">
+    <br>
+    <p th:if="${param.error}" class="error">Wrong UserName or Password</p>
+    <br><br>
+    <input type="submit" value="LOGIN">
+    </form>
+</body>
+</html>

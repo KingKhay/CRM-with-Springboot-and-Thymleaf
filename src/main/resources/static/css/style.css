@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding:0;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 150px;
+}
+header nav{
+    margin-left: 150px;
+}
+header nav li{
+    display: inline;
+    list-style: none;
+}
+header nav li a{
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    font-size: 24px;
+    font-family: monospace;
+    color:#562b3e;
+}
+header nav li a:hover{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.login-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    color:black;
+    margin-left: 250px;
+}
+.login-link:hover{
+    background-color: black;
+    color:white;
+}
+main{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+main p{
+    font-size: 36px;
+    font-family: monospace;
+    color: white;
+}
+main hr{
+    width: 50%;
+}
+
+/*Every paragraph should be uppercase*/
+p{
+    text-transform: uppercase;
+}
+footer{
+    background-color: #e1e1e1;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
